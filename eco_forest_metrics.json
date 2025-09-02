@@ -1,0 +1,17 @@
+{
+  "dataset": {
+    "rows": 237,
+    "cols": 4
+  },
+  "target": "trend",
+  "sklearn_random_forest": {
+    "rmse": 14.776847060612571,
+    "mae": 7.249317708333332,
+    "r2": 0.11002274384161492
+  },
+  "keras_mlp": {
+    "rmse": 12.913660171251012,
+    "mae": 6.956359386444092,
+    "epochs_trained": 52
+  }
+}

@@ -1,0 +1,26 @@
+data:
+  csv: C:\Users\sagni\Downloads\Eco Detect\archive\goal15.forest_shares.csv
+  target: trend
+  numeric_features:
+  - forests_2000
+  - forests_2020
+  categorical_features:
+  - iso3c
+preprocessing:
+  numeric_imputer: median
+  categorical_imputer: most_frequent
+  scaler: StandardScaler
+  ohe_handle_unknown: ignore
+training:
+  test_size: 0.2
+  random_state: 42
+  batch_size: 32
+  epochs: 60
+  patience: 6
+models:
+  sklearn_random_forest: eco_forest_rf.pkl
+  keras_mlp_h5: eco_forest_mlp.h5
+artifacts:
+  metrics_json: eco_forest_metrics.json
+  history_csv: history.csv
+  config_yaml: eco_forest_config.yaml
