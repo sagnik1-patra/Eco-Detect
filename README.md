@@ -30,7 +30,7 @@ Eco Detect/
 
 markdown
 Copy code
-
+![Confusion Matrix Heatmap](residual_heatmap.png)
 ---
 
 ## 🚀 Features
@@ -108,7 +108,6 @@ pred_path = predict_csv(
     show_plots=True
 )
 print("Predictions saved to:", pred_path)
-![Confusion Matrix Heatmap](residual_heatmap.png)
 📈 Metrics
 Example (from eco_forest_metrics.json):
 
